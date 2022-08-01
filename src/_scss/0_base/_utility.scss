@@ -1,0 +1,12 @@
+.u-sp--only {
+    display: none;
+}
+@include sp {
+    .u-pc--only {
+        display: none;
+    }
+
+    .u-sp--only {
+        display: block;
+    }
+}

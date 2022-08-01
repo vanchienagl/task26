@@ -1,0 +1,22 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    text-align: center;
+    padding: 86px 0;
+
+    &__logo {
+        width: 206px;
+    }
+
+    // Smartphone
+    @media screen and (max-width: 767.98px) {
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 33px 0 33px 3px;
+        &__logo {
+            width: 104px;
+        }   
+    }
+    
+}

@@ -1,0 +1,21 @@
+// Component Present
+.c-present {
+    &__main {
+        max-width: 1192px;
+        margin: 0 auto;
+    }
+
+    // Smartphone
+    @media screen and (max-width: 767.98px) {
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 0 28px;
+
+        &__main {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+}
