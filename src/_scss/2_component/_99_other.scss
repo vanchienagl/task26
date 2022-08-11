@@ -3,6 +3,14 @@
     &__main {
         max-width: 1192px;
         margin: 0 auto;
+        &--2{
+            max-width: 1196px;
+            img{
+                position: relative;
+                top: 2px;
+                left: 2px;
+            }
+        }
     }
 
     // Smartphone
@@ -17,5 +25,54 @@
             }
         }
     }
+
+    // Tablet
+    @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+        padding: 0 150px;
+    }
+
+    // Laptop
+    @media screen and (min-width: 1024px) and (max-width: 1919px) {
+        padding: 0 60px;
+    }
     
+}
+
+.c-heading{
+    font-family: $oswald-font;
+    font-size: 4.8rem;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.2;
+    letter-spacing: 4.9px;
+    padding-bottom: 37px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        background-color: $main-color;
+    }
+
+    // Smartphone
+    @media screen and (max-width: 767.98px) {
+        font-size: 2.4rem;
+        padding-bottom: 19px;
+        margin-bottom: 13px;
+        letter-spacing: 2px;
+        &::after{
+            width: 30px;
+        }
+    }
+
+    // Tablet
+    @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+        margin-left: 0;
+        padding-bottom: 15px;
+    }
 }

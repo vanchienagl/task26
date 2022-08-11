@@ -3,7 +3,7 @@ footer
 ------------------------------------------------------------*/
 .c-footer {
     text-align: center;
-    padding: 86px 0;
+    padding: 85px 0;
 
     &__logo {
         width: 206px;
@@ -13,10 +13,17 @@ footer
     @media screen and (max-width: 767.98px) {
         max-width: 375px;
         margin: 0 auto;
-        padding: 33px 0 33px 3px;
+        padding: 34px 0 33px 1px;
         &__logo {
             width: 104px;
         }   
     }
     
+    // Tablet
+    @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+        padding: 40px 0;
+        &__logo{
+            width: 120px;
+        }
+    }
 }

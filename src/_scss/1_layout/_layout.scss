@@ -1,18 +1,11 @@
-/* layout
-------------------------------------------------------------*/
 body {
-    font-family: $primary-font;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: $main-color;
-    //min-width: $base-width;
-    // @include sp {
-    //     min-width: 320px;
-    // }
+  font-family: $primary-font;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: $main-color;
 }
 
 .l-container {
-    max-width: $container-width;
-    margin: 0 auto;
+  max-width: $container-width;
+  margin: 0 auto;
 }
-

@@ -12,7 +12,7 @@
         transform: translate(-50%, -50%);
         width: 434px;
         height: 461px;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.49);
         padding: 114px 30px 60px;
         text-align: center;
     }
@@ -23,19 +23,33 @@
     }
 
     &__slogan {
-        max-width: 334px;
+        display: block;
         margin: 0 auto 42px;
+        line-height: 1;
+        font-family: $third-font;
+        font-size: 1.9rem;
+        letter-spacing: -0.7px;
+        margin-left: -19px;
+        em{
+            margin-right: -8px;
+        }
     }
 
     &__imgtext {
         margin-left: 7px;
     }
 
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        &__info{
+            margin-bottom: 5px;
+        }
+        &__logo {
+            margin-bottom: 5px;
+        }
+    }
+
     // Smartphone
     @media screen and (max-width: 767.98px) {
-        max-width: 375px;
-        margin: 0 auto;
-
         &__banner {
             &--image {
                 width: 100%;
@@ -56,13 +70,49 @@
         }
 
         &__slogan {
-            margin-bottom: 22px;
+            margin-bottom: 35px;
+            font-size: 0.9rem;
+            letter-spacing: -1.3px;
+            em{
+                margin-right: -4px;
+            }
         }
 
         &__imgtext {
             width: 161px;
             margin-left: 10px;
             margin-top: -14px;
+        }
+    }
+
+    // Tablet
+    @media screen and (min-width:768px) and (max-width: 1023.98px) {
+        &__info{
+            width: auto;
+            height: auto;
+            padding: 60px 30px;
+            top: 50%;
+            left: 50%;
+        }
+        &__logo{
+            max-width: calc(227px - 10%);
+            margin-bottom: 30px;
+        }
+        &__slogan{
+            margin-bottom: 33px;
+            font-size: 1.8rem;
+            letter-spacing: -1.3px;
+        }
+        &__imgtext{
+            margin: 0;
+        }
+    }
+
+    // Laptop
+    @media screen and (min-width: 1024px) and ( max-width: 1919px) {
+        &__info{
+            top: 50%;
+            left: 50%;
         }
     }
 }
